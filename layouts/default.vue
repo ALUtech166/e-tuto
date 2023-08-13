@@ -4,11 +4,11 @@
 
     <header>
       <nav
-        class="font-sans tw-mx-auto tw-flex tw-flex-wrap tw-gap-4 tw-px-8 lg:tw-justify-evenly tw-justify-between tw-items-center tw-py-6">
+        class="font-sans tw-mx-auto tw-flex tw-flex-wrap tw-gap-4 tw-px-8 lg:tw-justify-around tw-justify-between tw-items-center tw-py-6">
         <div>
           <nuxt-link to="/">
             <h1 class="tw-text-4xl tw-font-extrabold text-color">
-              Serge
+              e-tuto
             </h1>
           </nuxt-link>
 
@@ -65,7 +65,7 @@
           <v-col  class="tw-text-left tw-mt-8" cols="12" md="3" lg="3">
             <nuxt-link to="/">
             <h1 class="tw-text-4xl tw-font-extrabold tw-mb-4 text-color">
-              Serge
+              e-tuto
             </h1>
           </nuxt-link>
             <p class="tw-text-white tw-text-md tw-justify-center">
@@ -266,7 +266,7 @@ footer {
 }
 
 button {
-  border: 0.5px solid green;
+  border: 0.5px solid orangered;
 }
 
 button:hover {
@@ -274,11 +274,11 @@ button:hover {
 }
 
 .text-color {
-  color: #03989e;
+  color: orangered;
 }
 
 .bg-color {
-  background-color: #03989e;
+  background-color: orangered;
 }
 .font-sans {
   font-family: 'Josefin Sans', sans-serif;

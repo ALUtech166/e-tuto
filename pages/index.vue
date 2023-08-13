@@ -3,30 +3,57 @@
     <section class="lg:tw-mx-12 tw-mx-8">
       <div class="bg-image tw-py-24 tw-rounded-lg tw-shadow-2xl tw-shadow-gray-900 tw-h-full tw-w-full">
         <div
-          class="tw-w-full tw-h-full tw-flex tw-flex-col tw-bg-black tw-bg-opacity-60 tw-p-12">
+          class="tw-w-full tw-h-full tw-flex tw-flex-col lg:tw-flex-row tw-bg-black tw-bg-opacity-60 tw-p-12">
           <div class="tw-text-left tw-px-8 tw-h-full">
-            <p class="tw-text-white tw-text-xl tw-mb-4">Hello, I am</p>
-            <h1 class="tw-text-white tw-text-7xl tw-font-extrabold lg:tw-w-1/2">
-              Serge Anan
+            <h1 class="tw-text-white tw-text-5xl tw-font-extrabold lg:tw-w-3/4">
+              Expert Online Tutoring 
             </h1>
-            <h1 class="text-color tw-mt-4 tw-text-7xl tw-font-extrabold lg:tw-w-1/2">
-             TASSIGA
+            <h1 class="text-color tw-mt-4 tw-text-5xl tw-font-extrabold lg:tw-w-3/4">
+              for College and High School Success
             </h1>
 
-            <p class="tw-text-white tw-text-xl lg:tw-w-1/2 tw-mt-4">a passionate frontend developer focused on creating interactive, accessible, and responsive websites.</p>
-
-
+            <p class="tw-text-white tw-text-xl lg:tw-w-3/4 tw-mt-4">
+              Unlock your academic potential with ScholarLink, your premier destination for personalized online tutoring services.
+            </p>
 
           </div>
+
+          <v-img
+            class="tw-rounded-lg tw-shadow-2xl  tw-cursor-pointer"
+            src="https://img.freepik.com/free-photo/happy-successful-business-leader-signing-agreement_74855-2307.jpg?w=740&t=st=1691964166~exp=1691964766~hmac=d5d7276414cb4e587af8d6041fda464481b830a76440ded812c21257a469136e"
+            width="400px"></v-img>
         </div>
       </div>
 
       <div
-        class="bg-color tw-shadow-2xl tw-rounded-lg tw-shadow-gray-800 lg:tw-mx-24 tw-mx-8 tw-transform tw--translate-y-20 tw-bottom-0 tw-left-0 tw-px-8 tw-py-12">
-        <h1 class="tw-font-extrabold lg:tw-text-4xl tw-text-center tw-text-white tw-text-2xl tw-p-4">
-          "Think before you toss! Unleash your creativity
-          and give plastic a second life"
-        </h1>
+        class="bg-color tw-shadow-2xl tw-rounded-lg tw-shadow-gray-800 lg:tw-mx-24 tw-mx-8 tw-transform tw--translate-y-20 tw-bottom-0 tw-left-0 tw-px-8 tw-py-6">
+     
+
+
+  <!-- component -->
+<div class="tw-flex tw-flex-col tw-p-4 tw-py-8 tw-m-h-screen">
+
+<div class="tw-bg-white tw-shadow-2xl tw-items-center tw-justify-between tw-w-full tw-flex tw-rounded-full tw-shadow-gray-900 tw-p-2 tw-mb-5 tw-sticky" style="top: 5px">
+
+  
+
+    <v-autocomplete v-model="selectedItem1" :items="items1" label="Item 1" />
+    <v-autocomplete v-model="selectedItem2" :items="items2" label="Item 2" />
+    <v-autocomplete v-model="selectedItem3" :items="items3" label="Item 3" />
+  <div class="bg-color tw-p-4 hover:tw-bg-blue-400 tw-cursor-pointer tw-mx-2 tw-rounded-full">
+
+    <svg class="tw-w-6 tw-h-6 tw-text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+    </svg>
+
+  </div>
+
+</div>
+
+
+
+</div>
+
       </div>
     </section>
 
@@ -40,7 +67,14 @@ export default {
   data() {
     return {
       initialized: false,
-      posts: []
+      posts: [],
+      selectedItem1: null,
+      selectedItem2: null,
+      selectedItem3: null,
+      items1: ['Option 1', 'Option 2', 'Option 3'],
+      items2: ['Choice A', 'Choice B', 'Choice C'],
+      items3: ['Apple', 'Banana', 'Orange']
+    
     };
   },
   mounted() {
@@ -54,6 +88,10 @@ export default {
   },
 
   methods: {
+    search() {
+      // Perform search logic here
+      console.log('Search clicked')
+    },
     initializeAOS() {
       if (!this.initialized) {
         AOS.init({
@@ -78,27 +116,23 @@ export default {
 
 <style scoped>
 button {
-  border: 1px solid #03989e;
+  border: 1px solid orangered;
   background-color: white;
 }
 
 
-.bg-color:hover {
-  background-color: #03989e;
-  color: white;
-}
 
 .bg-color {
-  background-color: #03989e;
+  background-color: rgb(255, 68, 0);
   color: white;
 }
 
 .bg-color-1 {
-  background-color: #03989e;
+  background-color: orangered;
 }
 
 .bg-image {
-  background-image: url('https://img.freepik.com/free-photo/top-view-workspace-with-notebook-succulent-plant_23-2148430820.jpg?w=740&t=st=1690220651~exp=1690221251~hmac=a7249088cdb9fbe455226feccdb5ea68d2bd60b9c7ae35f497131c6e9a06e731');
+  background-image: url('https://img.freepik.com/free-vector/happy-student-having-geography-lesson-with-his-tutor-flat_1284-63593.jpg?w=740&t=st=1691964054~exp=1691964654~hmac=55e502bffbca59e19a47cef88e0933efc23d310eb719b19f38e8604567cee293');
   background-size: cover;
   height: 100%;
 }
@@ -111,7 +145,7 @@ button {
 
 
 .text-color {
-  color: #03989e;
+  color: orangered;
 }
 
 /* Popup */
