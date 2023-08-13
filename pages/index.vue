@@ -1,27 +1,27 @@
 <template>
   <div>
     <section class="lg:tw-mx-12 tw-mx-8">
-      <div class="bg-image tw-py-24 tw-rounded-lg tw-shadow-2xl tw-shadow-gray-900 tw-h-full tw-w-full">
+      <div class="bg-image tw-py-20 tw-rounded-lg tw-shadow-2xl tw-shadow-gray-900 tw-h-full tw-w-full">
         <div
-          class="tw-w-full tw-h-full tw-flex tw-flex-col lg:tw-flex-row tw-bg-black tw-bg-opacity-60 tw-p-12">
+          class="tw-w-full tw-h-full tw-flex tw-flex-col lg:tw-flex-row tw-p-12">
           <div class="tw-text-left tw-px-8 tw-h-full">
-            <h1 class="tw-text-white tw-text-5xl tw-font-extrabold lg:tw-w-3/4">
+            <h1 class="tw-text-black tw-text-5xl tw-font-extrabold lg:tw-w-3/4">
               Expert Online Tutoring 
             </h1>
             <h1 class="text-color tw-mt-4 tw-text-5xl tw-font-extrabold lg:tw-w-3/4">
               for College and High School Success
             </h1>
 
-            <p class="tw-text-white tw-text-xl lg:tw-w-3/4 tw-mt-4">
+            <p class="tw-text-black tw-text-xl lg:tw-w-3/4 tw-mt-4">
               Unlock your academic potential with ScholarLink, your premier destination for personalized online tutoring services.
             </p>
 
           </div>
 
           <v-img
-            class="tw-rounded-lg tw-shadow-2xl  tw-cursor-pointer"
+            class="tw-rounded-lg tw-cursor-pointer tw-tranform tw-translate-x-10"
             src="https://img.freepik.com/free-photo/happy-successful-business-leader-signing-agreement_74855-2307.jpg?w=740&t=st=1691964166~exp=1691964766~hmac=d5d7276414cb4e587af8d6041fda464481b830a76440ded812c21257a469136e"
-            width="400px"></v-img>
+            width="350px"></v-img>
         </div>
       </div>
 
