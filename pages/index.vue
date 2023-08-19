@@ -68,8 +68,8 @@
           <div class="">
             <div class="tw-bg-white tw-rounded-lg">
 
-              <div class=" tw-p-4 tw-pt-4">
-                <h1 class="text-color tw-text-4xl tw-font-extrabold tw-text-justify tw-pt-12">
+              <div class=" tw-p-4 tw-pt-12">
+                <h1 class="text-color tw-text-4xl tw-font-extrabold tw-text-justify tw-pt-24">
                   We Choose Use
                 </h1>
 
