@@ -33,17 +33,23 @@
               class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Home</nuxt-link>
           </li>
 
-          <li @click="closeMenu">
-            <nuxt-link to="/about" :class="$route.path === '/about' ? 'active' : ''"
-              class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">About Us</nuxt-link>
-          </li>
-         
+
 
           <li @click="closeMenu">
             <nuxt-link to="/contact" :class="$route.path === '/contact' ? 'active' : ''"
               class="text-black font-medium	hover:text-blue-800 text-md hover:no-underline">Contact Us</nuxt-link>
           </li>
-        
+
+            <button @click="closeMenu"
+                class="tw-group bg-color tw-shadow-lg tw-rounded-lg tw-relative tw-h-12 tw-mt-2 tw-mb-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-2xl-blue-600 hover:tw-shadow-2xl-lg tw-w-48 tw-overflow-hidden tw-rounded-lg tw-text-lg tw-shadow-2xl-2xl">
+                <div
+                  class="tw-absolute tw-inset-0 tw-w-full bg-color tw--transition-all tw-duration-[250ms] tw-ease-out group-hover:tw-w-full">
+                </div>
+                <span class="tw-relative tw-inline-flex tw-items-center tw-gap-2 tw-text-white group-hover:tw-text-white">
+                  Register
+                </span>
+              </button>
+
 
         </ul>
       </nav>
@@ -56,57 +62,148 @@
     </div>
 
 
-    <footer class="tw-text-white">
+    <footer class="tw-text-white tw-shadow-2xl tw-shadow-gray-900">
 
-      <div class="tw-relative tw-w-full tw-h-full tw-p-12 tw-pb-4 tw-bg-black tw-bg-opacity-80">
+      <div class="tw-relative tw-w-full tw-h-full tw-p-12 tw-pb-4">
 
         <v-row class="">
 
-          <v-col  class="tw-text-left tw-mt-8" cols="12" md="3" lg="3">
+          <v-col class="tw-text-left tw-mt-8" cols="12" md="3" lg="3">
             <nuxt-link to="/">
-            <h1 class="tw-text-4xl tw-font-extrabold tw-mb-4 text-color">
-              e-tuto
-            </h1>
-          </nuxt-link>
-            <p class="tw-text-white tw-text-md tw-justify-center">
+              <h1 class="tw-text-4xl tw-font-extrabold tw-mb-4 tw-text-color">
+                e-tuto
+              </h1>
+            </nuxt-link>
+            <p class="tw-text-white tw-text-sm">
               Every image featured on this website has been designed using Canvas.
             </p>
+            <form
+              class="tw-mt-2 tw-bg-transparent"
+            >
+
+              <div class="tw-w-full tw-md:w-1/2">
+                <label class="tw-block tw-font-extrabold tw-mb-1" for="email">
+                  Subcribe Now
+                </label>
+
+                <input type="email" name="email" id="email" placeholder="email@example.com"
+                  class="tw-block  tw-bg-gray-300 tw-placeholder-gray-500 tw-w-full  tw-text-black tw-shadow-xl tw-rounded-lg tw-outline-none  tw-mb-1 tw-p-3"
+                  required>
+              </div>
+
+
+              <button
+                class="tw-group tw-bg-black tw-shadow-lg tw-rounded-lg tw-relative tw-h-12 tw-mt-2 tw-mb-4 tw-cursor-pointer hover:tw-transform hover:tw-translate-x-2 hover:tw-transition-transform hover:tw-duration-300 hover:tw-shadow-2xl-blue-600 hover:tw-shadow-2xl-lg tw-w-48 tw-overflow-hidden tw-rounded-lg tw-text-lg tw-shadow-2xl-2xl">
+                <div
+                  class="tw-absolute tw-inset-0 tw-w-full tw-bg-black tw--transition-all tw-duration-[250ms] tw-ease-out group-hover:tw-w-full">
+                </div>
+                <span class="tw-relative tw-inline-flex tw-items-center tw-gap-2 tw-text-white group-hover:tw-text-white">
+                  Subscribe
+                </span>
+              </button>
+            </form>
+
           </v-col>
+
 
           <v-col class="tw-mt-8" cols="12" md="3" lg="3">
-            <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Contact Us</h3>
-            <p class="tw-text-white tw-text-md">
-              <span class="tw-mb-12"><strong>Location:</strong> Pamplemousses, Mauritius</span><br>
-
-              <span class="tw-mb-12"><strong>Hours:</strong>
-                Tue – Thu
-                7:30AM – 5:30PM</span> <br />
-              <a href="mailto:info@dotterra.net" class="tw-text-white tw-mb-8">
-                <strong>Email:</strong>
-                info@dotterra.net</a><br />
-              <a href="tel:+250-784-206-989" class="tw-text-white tw-mb-8"><strong>Tel:</strong> +250 784 206 989</a>
-            </p>
-          </v-col>
-          <v-col class="tw-mt-8" cols="12" md="6" lg="3">
             <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Useful Links</h3>
             <ul class="tw-list-disc tw-list-inside tw-text-gray-400 tw-leading-6">
               <li>
-                <a href="/privacy" class="tw-text-white">Privacy Policy</a>
+                <a href="/privacy" class="tw-text-white tw-text-sm">Privacy Policy</a>
               </li>
               <li>
-                <a href="/contact" class="tw-text-white">Contact us</a>
+                <a href="/contact" class="tw-text-white tw-text-sm">Contact us</a>
+              </li>
+
+              <li>
+                <a href="/contact" class="tw-text-white tw-text-sm">Contact us</a>
+              </li>
+              <li>
+                <a href="/contact" class="tw-text-white tw-text-sm">Contact us</a>
               </li>
 
 
             </ul>
           </v-col>
-          <v-col class="tw-mt-8" cols="12" md="6" lg="3">
+          <v-col class="tw-mt-8" cols="12" md="3" lg="3">
+            <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Our Services</h3>
+            <ul class="tw-list-disc tw-list-inside tw-text-gray-400 tw-leading-6">
+              <li>
+                <a href="/privacy" class="tw-text-white tw-text-sm">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/contact" class="tw-text-white tw-text-sm">Contact us</a>
+              </li>
+
+              <li>
+                <a href="/privacy" class="tw-text-white tw-text-sm">Privacy Policy</a>
+              </li>
+
+              <li>
+                <a href="/privacy" class="tw-text-white tw-text-sm">Privacy Policy</a>
+              </li>
+
+
+            </ul>
+          </v-col>
+          <v-col class="tw-mt-8" cols="12" md="3" lg="3">
             <h3 class="tw-text-white tw-font-extrabold tw-mb-4">Connect with Us</h3>
+            <p class="tw-text-white tw-text-md">
+              <a href="mailto:info@dotterra.net"
+                class="tw-flex lg:tw-flex-row tw-gap-4 tw-items-center tw-text-white tw-mb-1 tw-text-sm">
+                <strong><svg width="15" xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img"
+                    viewBox="0 0 512 512" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <rect width="512" height="512" rx="15%" fill="#ffffff"></rect>
+                      <path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4"></path>
+                      <path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#ea4335"></path>
+                      <path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853"></path>
+                      <path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#c5221f"></path>
+                      <path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#fbbc04"></path>
+                    </g>
+                  </svg></strong>
+                info@e-tuto.com
+              </a>
+              <a href="tel:+250-785-658-174"
+                class="tw-flex lg:tw-flex-row tw-gap-4 tw-items-center tw-text-white tw-mb-8 tw-text-sm"><strong><svg
+                    width="15" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 473.654 473.654" xml:space="preserve"
+                    fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <circle style="fill:#49A0AE;" cx="236.827" cy="236.827" r="236.827"></circle>
+                      <path style="fill:#A2D4DE;"
+                        d="M363.64,292.416c-18.324-17.625-36.876-28.712-59.081-12.285c-22.336,16.529-24.7,34.875-24.7,34.875 s2.098,35.167-82.671-41.068c-76.287-84.806-41.098-82.708-41.098-82.708s18.339-2.363,34.868-24.7 c16.428-22.202,4.835-40.275-12.284-59.085c-54.777-60.185-87.981,8.208-87.981,8.208c-38.783,65.274,25.863,142.852,75.734,189.065 c46.225,49.871,123.765,114.457,189.009,75.681C355.432,380.401,424.685,351.153,363.64,292.416z">
+                      </path>
+                      <path style="fill:#404040;"
+                        d="M121.035,85.419c-0.045,0.015-0.067,0.052-0.108,0.071c0.49-0.206,0.995-0.389,1.488-0.572 C121.955,85.083,121.488,85.236,121.035,85.419z">
+                      </path>
+                      <g>
+                        <path style="fill:#7DCDCC;"
+                          d="M301.339,242.07L301.339,242.07c-3.493,0-6.331-2.835-6.331-6.335 c0.007-20.257-5.647-35.848-16.798-46.341c-17.785-16.731-44.176-15.325-44.437-15.314c-3.508,0.187-6.492-2.431-6.713-5.916 c-0.221-3.489,2.416-6.488,5.901-6.72c1.301-0.067,31.97-1.84,53.831,18.634c13.855,12.98,20.882,31.708,20.882,55.652 C307.67,239.235,304.835,242.07,301.339,242.07z">
+                        </path>
+                        <path style="fill:#7DCDCC;"
+                          d="M276.848,242.276L276.848,242.276c-2.621,0-4.749-2.124-4.749-4.749 c0-13.332-3.702-23.585-11.013-30.466c-11.671-10.987-29.034-10.078-29.21-10.059c-2.629,0.194-4.865-1.829-5.033-4.443 c-0.161-2.61,1.81-4.865,4.428-5.037c0.868-0.052,21.518-1.242,36.248,12.554c9.341,8.751,14.076,21.353,14.076,37.452 C281.597,240.152,279.47,242.276,276.848,242.276z">
+                        </path>
+                        <path style="fill:#7DCDCC;"
+                          d="M331.629,244.561L331.629,244.561c-4.368,0-7.909-3.541-7.909-7.913 c0-30.014-8.429-53.121-25.044-68.681c-26.536-24.853-65.297-22.628-65.689-22.598c-4.39,0.209-8.13-3.022-8.422-7.382 c-0.284-4.36,3.025-8.13,7.386-8.418c1.87-0.112,46.057-2.655,77.551,26.839c19.939,18.675,30.047,45.679,30.047,80.24 C339.546,241.019,336.001,244.561,331.629,244.561z">
+                        </path>
+                        <path style="fill:#7DCDCC;"
+                          d="M366.175,253.94L366.175,253.94c-5.25,0-9.495-4.252-9.495-9.495 c0-43.338-12.213-76.747-36.308-99.319c-38.424-35.99-94.518-32.744-95.09-32.718c-5.265,0.393-9.757-3.62-10.093-8.855 c-0.344-5.235,3.616-9.753,8.852-10.097c2.621-0.187,64.945-3.751,109.315,37.807c28.077,26.3,42.317,64.384,42.31,113.182 C375.67,249.688,371.418,253.94,366.175,253.94z">
+                        </path>
+                      </g>
+                    </g>
+                  </svg></strong>+250 785 658 174</a>
+            </p>
             <div class="tw-mb-4">
               <ul class="tw-flex tw-items-center tw-gap-4">
                 <li>
                   <a href="https://www.linkedin.com/company/sheba-plastic/" target="_blank" class="tw-text-white">
-                    <svg width="32" height="32" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                    <svg class="tw-bg-white tw-rounded-full tw-p-1" width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                       <g id="SVGRepo_iconCarrier">
@@ -119,7 +216,7 @@
 
                 <li>
                   <a href="https://twitter.com/ShebaPlastic" target="_blank" class="tw-text-white">
-                    <svg width="32" height="32" viewBox="0 -4 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="tw-bg-white tw-rounded-full tw-p-1" width="20" height="20" viewBox="0 -4 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -141,7 +238,7 @@
 
                 <li>
                   <a href="https://www.instagram.com/sheba_plastic/" target="_blank" class="tw-text-white">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="tw-bg-white tw-rounded-full tw-p-1" width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                       <g id="SVGRepo_iconCarrier">
@@ -183,47 +280,701 @@
                   </a>
                 </li>
 
-                <!--  <li>
-                <a href="#" class="tw-text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-facebook" viewBox="0 0 16 16" id="IconChangeColor">
-                    <path
-                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                      id="mainIconPathAttribute" fill="#ffffff" filter="url(#shadow)"></path>
-                    <filter id="shadow">
-                      <feDropShadow id="shadowValue" stdDeviation=".5" dx="0" dy="0" flood-color="black">
-                      </feDropShadow>
-                    </filter>
+                <li>
+                  <a href="#" class="tw-text-white">
+                    <svg class="tw-bg-white tw-rounded-full tw-p-1" width="20" height="20" viewBox="0 0 100 100" version="1.1" xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <style type="text/css">
+                          .st0 {
+                            fill: #FFFFFF;
+                          }
+
+                          .st1 {
+                            fill: #F5BB41;
+                          }
+
+                          .st2 {
+                            fill: #2167D1;
+                          }
+
+                          .st3 {
+                            fill: #3D84F3;
+                          }
+
+                          .st4 {
+                            fill: #4CA853;
+                          }
+
+                          .st5 {
+                            fill: #398039;
+                          }
+
+                          .st6 {
+                            fill: #D74F3F;
+                          }
+
+                          .st7 {
+                            fill: #D43C89;
+                          }
+
+                          .st8 {
+                            fill: #B2005F;
+                          }
+
+                          .st9 {
+                            fill: none;
+                            stroke: #000000;
+                            stroke-width: 3;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                          }
+
+                          .st10 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                            fill: none;
+                            stroke: #000000;
+                            stroke-width: 3;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                          }
+
+                          .st11 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                            fill: none;
+                            stroke: #040404;
+                            stroke-width: 3;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            stroke-miterlimit: 10;
+                          }
+
+                          .st12 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                          }
+
+                          .st13 {
+                            fill-rule: evenodd;
+                            clip-rule: evenodd;
+                            fill: #040404;
+                          }
+
+                          .st14 {
+                            fill: url(#SVGID_1_);
+                          }
+
+                          .st15 {
+                            fill: url(#SVGID_2_);
+                          }
+
+                          .st16 {
+                            fill: url(#SVGID_3_);
+                          }
+
+                          .st17 {
+                            fill: url(#SVGID_4_);
+                          }
+
+                          .st18 {
+                            fill: url(#SVGID_5_);
+                          }
+
+                          .st19 {
+                            fill: url(#SVGID_6_);
+                          }
+
+                          .st20 {
+                            fill: url(#SVGID_7_);
+                          }
+
+                          .st21 {
+                            fill: url(#SVGID_8_);
+                          }
+
+                          .st22 {
+                            fill: url(#SVGID_9_);
+                          }
+
+                          .st23 {
+                            fill: url(#SVGID_10_);
+                          }
+
+                          .st24 {
+                            fill: url(#SVGID_11_);
+                          }
+
+                          .st25 {
+                            fill: url(#SVGID_12_);
+                          }
+
+                          .st26 {
+                            fill: url(#SVGID_13_);
+                          }
+
+                          .st27 {
+                            fill: url(#SVGID_14_);
+                          }
+
+                          .st28 {
+                            fill: url(#SVGID_15_);
+                          }
+
+                          .st29 {
+                          fill: url(#SVGID_16_);
+                        }
+
+                        .st30 {
+                          fill: url(#SVGID_17_);
+                        }
+
+                        .st31 {
+                          fill: url(#SVGID_18_);
+                        }
+
+                        .st32 {
+                          fill: url(#SVGID_19_);
+                        }
+
+                        .st33 {
+                          fill: url(#SVGID_20_);
+                        }
+
+                        .st34 {
+                          fill: url(#SVGID_21_);
+                        }
+
+                        .st35 {
+                          fill: url(#SVGID_22_);
+                        }
+
+                        .st36 {
+                          fill: url(#SVGID_23_);
+                        }
+
+                        .st37 {
+                          fill: url(#SVGID_24_);
+                        }
+
+                        .st38 {
+                          fill: url(#SVGID_25_);
+                        }
+
+                        .st39 {
+                          fill: url(#SVGID_26_);
+                        }
+
+                        .st40 {
+                          fill: url(#SVGID_27_);
+                        }
+
+                        .st41 {
+                          fill: url(#SVGID_28_);
+                        }
+
+                        .st42 {
+                          fill: url(#SVGID_29_);
+                        }
+
+                        .st43 {
+                          fill: url(#SVGID_30_);
+                        }
+
+                        .st44 {
+                          fill: url(#SVGID_31_);
+                        }
+
+                        .st45 {
+                          fill: url(#SVGID_32_);
+                        }
+
+                        .st46 {
+                          fill: url(#SVGID_33_);
+                        }
+
+                        .st47 {
+                          fill: url(#SVGID_34_);
+                        }
+
+                        .st48 {
+                          fill: url(#SVGID_35_);
+                        }
+
+                        .st49 {
+                          fill: url(#SVGID_36_);
+                        }
+
+                        .st50 {
+                          fill: url(#SVGID_37_);
+                        }
+
+                        .st51 {
+                          fill: url(#SVGID_38_);
+                        }
+
+                        .st52 {
+                          fill: url(#SVGID_39_);
+                        }
+
+                        .st53 {
+                          fill: url(#SVGID_40_);
+                        }
+
+                        .st54 {
+                          fill: url(#SVGID_41_);
+                        }
+
+                        .st55 {
+                          fill: url(#SVGID_42_);
+                        }
+
+                        .st56 {
+                          fill: url(#SVGID_43_);
+                        }
+
+                        .st57 {
+                          fill: url(#SVGID_44_);
+                        }
+
+                        .st58 {
+                          fill: url(#SVGID_45_);
+                        }
+
+                        .st59 {
+                          fill: #040404;
+                        }
+
+                        .st60 {
+                          fill: url(#SVGID_46_);
+                        }
+
+                        .st61 {
+                          fill: url(#SVGID_47_);
+                        }
+
+                        .st62 {
+                          fill: url(#SVGID_48_);
+                        }
+
+                        .st63 {
+                          fill: url(#SVGID_49_);
+                        }
+
+                        .st64 {
+                          fill: url(#SVGID_50_);
+                        }
+
+                        .st65 {
+                          fill: url(#SVGID_51_);
+                        }
+
+                        .st66 {
+                          fill: url(#SVGID_52_);
+                        }
+
+                        .st67 {
+                          fill: url(#SVGID_53_);
+                        }
+
+                        .st68 {
+                          fill: url(#SVGID_54_);
+                        }
+
+                        .st69 {
+                          fill: url(#SVGID_55_);
+                        }
+
+                        .st70 {
+                          fill: url(#SVGID_56_);
+                        }
+
+                        .st71 {
+                          fill: url(#SVGID_57_);
+                        }
+
+                        .st72 {
+                          fill: url(#SVGID_58_);
+                        }
+
+                        .st73 {
+                          fill: url(#SVGID_59_);
+                        }
+
+                        .st74 {
+                          fill: url(#SVGID_60_);
+                        }
+
+                        .st75 {
+                          fill: url(#SVGID_61_);
+                        }
+
+                        .st76 {
+                          fill: url(#SVGID_62_);
+                        }
+
+                        .st77 {
+                          fill: none;
+                          stroke: #000000;
+                          stroke-width: 3;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .st78 {
+                          fill: none;
+                          stroke: #FFFFFF;
+                          stroke-miterlimit: 10;
+                        }
+
+                        .st79 {
+                          fill: #4BC9FF;
+                        }
+
+                        .st80 {
+                          fill: #5500DD;
+                        }
+
+                        .st81 {
+                          fill: #FF3A00;
+                        }
+
+                        .st82 {
+                          fill: #E6162D;
+                        }
+
+                        .st83 {
+                          fill: #F1F1F1;
+                        }
+
+                        .st84 {
+                          fill: #FF9933;
+                        }
+
+                        .st85 {
+                          fill: #B92B27;
+                        }
+
+                        .st86 {
+                          fill: #00ACED;
+                        }
+
+                        .st87 {
+                          fill: #BD2125;
+                        }
+
+                        .st88 {
+                          fill: #1877F2;
+                        }
+
+                        .st89 {
+                          fill: #6665D2;
+                        }
+
+                        .st90 {
+                          fill: #CE3056;
+                        }
+
+                        .st91 {
+                          fill: #5BB381;
+                        }
+
+                        .st92 {
+                          fill: #61C3EC;
+                        }
+
+                        .st93 {
+                          fill: #E4B34B;
+                        }
+
+                        .st94 {
+                          fill: #181EF2;
+                        }
+
+                        .st95 {
+                          fill: #FF0000;
+                        }
+
+                        .st96 {
+                          fill: #FE466C;
+                        }
+
+                        .st97 {
+                          fill: #FA4778;
+                        }
+
+                        .st98 {
+                          fill: #FF7700;
+                        }
+
+                        .st99 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #1F6BF6;
+                        }
+
+                        .st100 {
+                          fill: #520094;
+                        }
+
+                        .st101 {
+                          fill: #4477E8;
+                        }
+
+                        .st102 {
+                          fill: #3D1D1C;
+                        }
+
+                        .st103 {
+                          fill: #FFE812;
+                        }
+
+                        .st104 {
+                          fill: #344356;
+                        }
+
+                        .st105 {
+                          fill: #00CC76;
+                        }
+
+                        .st106 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #345E90;
+                        }
+
+                        .st107 {
+                          fill: #1F65D8;
+                        }
+
+                        .st108 {
+                          fill: #EB3587;
+                        }
+
+                        .st109 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #603A88;
+                        }
+
+                        .st110 {
+                          fill: #E3CE99;
+                        }
+
+                        .st111 {
+                          fill: #783AF9;
+                        }
+
+                        .st112 {
+                          fill: #FF515E;
+                        }
+
+                        .st113 {
+                          fill: #FF4906;
+                        }
+
+                        .st114 {
+                          fill: #503227;
+                        }
+
+                        .st115 {
+                          fill: #4C7BD9;
+                        }
+
+                        .st116 {
+                          fill: #69C9D0;
+                        }
+
+                        .st117 {
+                          fill: #1B92D1;
+                        }
+
+                        .st118 {
+                          fill: #EB4F4A;
+                        }
+
+                        .st119 {
+                          fill: #513728;
+                        }
+
+                        .st120 {
+                          fill: #FF6600;
+                        }
+
+                        .st121 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #B61438;
+                        }
+
+                        .st122 {
+                          fill: #FFFC00;
+                        }
+
+                        .st123 {
+                          fill: #141414;
+                        }
+
+                        .st124 {
+                          fill: #94D137;
+                        }
+
+                        .st125 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #F1F1F1;
+                        }
+
+                        .st126 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #66E066;
+                        }
+
+                        .st127 {
+                          fill: #2D8CFF;
+                        }
+
+                        .st128 {
+                          fill: #F1A300;
+                        }
+
+                        .st129 {
+                          fill: #4BA2F2;
+                        }
+
+                        .st130 {
+                          fill: #1A5099;
+                        }
+
+                        .st131 {
+                          fill: #EE6060;
+                        }
+
+                        .st132 {
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          fill: #F48120;
+                        }
+
+                        .st133 {
+                          fill: #222222;
+                        }
+
+                        .st134 {
+                          fill: url(#SVGID_63_);
+                        }
+
+                        .st135 {
+                          fill: #0077B5;
+                        }
+
+                        .st136 {
+                          fill: #FFCC00;
+                        }
+
+                        .st137 {
+                          fill: #EB3352;
+                        }
+
+                        .st138 {
+                          fill: #F9D265;
+                        }
+
+                        .st139 {
+                          fill: #F5B955;
+                        }
+
+                        .st140 {
+                          fill: #DD2A7B;
+                        }
+
+                        .st141 {
+                          fill: #66E066;
+                        }
+
+                        .st142 {
+                          fill: #EB4E00;
+                        }
+
+                        .st143 {
+                          fill: #FFC794;
+                        }
+
+                        .st144 {
+                          fill: #B5332A;
+                        }
+
+                        .st145 {
+                          fill: #4E85EB;
+                        }
+
+                        .st146 {
+                          fill: #58A45C;
+                        }
+
+                        .st147 {
+                          fill: #F2BC42;
+                        }
+
+                        .st148 {
+                          fill: #D85040;
+                        }
+
+                        .st149 {
+                          fill: #464EB8;
+                        }
+
+                        .st150 {
+                          fill: #7B83EB;
+                        }
+                      </style>
+                      <g id="Layer_1"></g>
+                      <g id="Layer_2">
+                        <g>
+                          <path class="st88"
+                            d="M50,2.5c-58.892,1.725-64.898,84.363-7.46,95l0,0h0H50h7.46l0,0C114.911,86.853,108.879,4.219,50,2.5z">
+                          </path>
+                          <path class="st83"
+                            d="M57.46,64.104h11.125l2.117-13.814H57.46v-8.965c0-3.779,1.85-7.463,7.781-7.463h6.021 c0,0,0-11.761,0-11.761c-12.894-2.323-28.385-1.616-28.722,17.66V50.29H30.417v13.814H42.54c0,0,0,33.395,0,33.396H50h7.46l0,0h0 V64.104z">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
                   </svg>
                 </a>
               </li>
- -->
-
-              </ul>
-            </div>
-          </v-col>
-        </v-row>
-
-          
-        <v-divider class="tw-my-4 tw-text-white tw-bg-white"></v-divider>
-        <div class="tw-text-center tw-text-white">
-          <p>&copy; 2023 DotTerra. All rights reserved</p>
-        </div>
 
 
+            </ul>
+          </div>
+        </v-col>
+      </v-row>
 
+
+      <v-divider class="tw-my-2 tw-mx-4 tw-text-white tw-bg-white"></v-divider>
+      <div class="tw-text-white tw-text-xs tw-flex tw-justify-evenly">
+        <p class="tw-text-center">&copy; 2023 e-tuto. All rights reserved</p>
+        <p class="tw-text-right">FAQ Privacy Terms & Conditions</p>
       </div>
-    </footer>
 
-    <div style="display:none">
-      <svg id="dots-triangle" width="170" height="170" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M168.152 170a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 0a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.479 0a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zM94.24 133.043a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 36.956a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 55.434a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.479 73.913a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.478 92.391a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zM1.848 133.044a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.695zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696z"
-          fill="#2C8056" fill-rule="evenodd" opacity=".503" />
-      </svg>
+
+
     </div>
+  </footer>
+
+  <div style="display:none">
+    <svg id="dots-triangle" width="170" height="170" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M168.152 170a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 0a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.479 0a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zM94.24 133.043a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 36.956a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm-18.478 55.434a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.479 73.913a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm-18.478 92.391a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0 18.479a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zM1.848 133.044a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.695zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0 18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-55.435a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.479a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.695 1.848 1.848 0 0 1 0 3.695zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696zm0-18.478a1.848 1.848 0 1 1 0-3.696 1.848 1.848 0 0 1 0 3.696z"
+        fill="#2C8056" fill-rule="evenodd" opacity=".503" />
+    </svg>
   </div>
-</template>
+</div></template>
 
 <script>
 import Popup from "@/components/Popup";
@@ -257,12 +1008,10 @@ export default {
 
 </script>
 
-<style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+<style scoped>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
 
 footer {
-  background-image: url(https://img.freepik.com/premium-photo/office-desk-top-view-with-office-supplies-overhead-shot_35674-13097.jpg?w=740);
-  background-size: cover;
+  background-color: #0B2447;
 }
 
 button {
@@ -280,6 +1029,7 @@ button:hover {
 .bg-color {
   background-color: #0B2447;
 }
+
 .font-sans {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Poppins', sans-serif;
