@@ -266,7 +266,7 @@ footer {
 }
 
 button {
-  border: 0.5px solid orangered;
+  border: 0.5px solid #0B2447;
 }
 
 button:hover {
@@ -274,11 +274,11 @@ button:hover {
 }
 
 .text-color {
-  color: orangered;
+  color: #0B2447;
 }
 
 .bg-color {
-  background-color: orangered;
+  background-color: #0B2447;
 }
 .font-sans {
   font-family: 'Josefin Sans', sans-serif;

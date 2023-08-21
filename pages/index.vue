@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="lg:tw-mx-12 tw-mx-8">
-      <div class="bg-image tw-py-20 tw-rounded-lg tw-shadow-2xl tw-shadow-gray-900 tw-h-full tw-w-full">
+      <div class="tw-py-20 tw-rounded-lg tw-shadow-2xl tw-shadow-gray-900 tw-h-full tw-w-full">
         <div class="tw-w-full tw-h-full tw-flex tw-flex-col lg:tw-flex-row tw-p-12">
-          <div class="tw-text-left tw-px-8 tw-h-full">
+          <div class="tw-text-left tw-px-10 tw-h-full">
             <h1 class="tw-text-black tw-text-5xl tw-font-extrabold lg:tw-w-3/4">
               Expert Online Tutoring
             </h1>
@@ -18,9 +18,9 @@
 
           </div>
 
-          <v-img class="tw-rounded-lg tw-cursor-pointer tw-tranform tw-translate-x-10"
-            src="https://img.freepik.com/free-photo/happy-successful-business-leader-signing-agreement_74855-2307.jpg?w=740&t=st=1691964166~exp=1691964766~hmac=d5d7276414cb4e587af8d6041fda464481b830a76440ded812c21257a469136e"
-            width="350px"></v-img>
+          <v-img class="tw-rounded-lg tw-cursor-pointer"
+            src="https://img.freepik.com/free-photo/mother-helping-supporting-her-daughter-with-homeschool-while-staying-home-new-normal-lifestyle-concept_58466-14443.jpg?w=740&t=st=1692639699~exp=1692640299~hmac=231723b28dc1627c9811fae0070b55e4d89500cc7e8bc4f6550c187cd3568ccf"
+            width="425px"></v-img>
         </div>
       </div>
 
@@ -70,7 +70,7 @@
 
               <div class=" tw-p-4 tw-pt-12">
                 <h1 class="text-color tw-text-4xl tw-font-extrabold tw-text-justify tw-pt-24">
-                  We Choose Use
+                  We Choose Us
                 </h1>
 
                 <p class="tw-text-sm tw-text-gray-600 tw-font-medium tw-text-justify tw-pt-3">
@@ -275,19 +275,19 @@ export default {
 
 <style scoped>
 button {
-  border: 1px solid orangered;
+  border: 1px solid #0B2447;
   background-color: white;
 }
 
 
 
 .bg-color {
-  background-color: rgb(255, 68, 0);
+  background-color: #0B2447;
   color: white;
 }
 
 .bg-color-1 {
-  background-color: orangered;
+  background-color: #0B2447;
 }
 
 .bg-image {
@@ -304,7 +304,7 @@ button {
 
 
 .text-color {
-  color: orangered;
+  color: #0B2447;
 }
 
 /* Popup */
